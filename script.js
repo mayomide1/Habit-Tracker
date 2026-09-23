@@ -35,8 +35,8 @@ function render(){
     <div class="habit" data-index=${index}>
         <p>${h.streak}🔥</p>
         <h2>${h.habit} <span></span></h2>
-        <button class="check-btn">✓</button>
-        <button class="delete-btn">🗑️</button>
+        <button class="check-btn"><i class="fa-solid fa-check"></i></button>
+        <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
         
     </div>    
         `).join("")
@@ -47,7 +47,6 @@ habitsList.addEventListener("click", (event) => {
     if (!habitDiv) return;
     const index = parseInt(habitDiv.dataset.index);
 
-    // 🔥 FIX: Run the correct function based on which button was clicked
     if (event.target.classList.contains("check-btn")) {
         checkHabit(index);
     } 
