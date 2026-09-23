@@ -23,7 +23,7 @@ function saveHabit(){
     habits.push(habit)
 
     localStorage.setItem("habit", JSON.stringify(habits))
-    console.log(habits)
+
 
     habitTitle.value = ""
    render()
@@ -83,7 +83,7 @@ function deleteHabit(index) {
     if (!confirmed) return;
 
     habits.splice(index, 1);
-    localStorage.setItem("habits", JSON.stringify(habits));
+    localStorage.setItem("habit", JSON.stringify(habits));
     render();
 }
 
