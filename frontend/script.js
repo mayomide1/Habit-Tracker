@@ -3,7 +3,7 @@ const habitTitle = document.getElementById("habit-title");
 const saveHabitBtn = document.getElementById("save-habit-btn");
 const habitsList = document.getElementById("habits-list");
 
-const API = "http://localhost:5000/habits";
+const API = "https://habit-tracker-wa86.onrender.com/";
 
 saveHabitBtn.addEventListener("click", saveHabit);
 
